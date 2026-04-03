@@ -3,7 +3,7 @@ export function logger(req,res,next){
 
     res.on("finish", ()=>{
         const duration = Date.now()-start;
-        console.lof({
+        console.log({
             request_id: req.id,
             method: req.method,
             path: req.originalUrl,
